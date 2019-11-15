@@ -94,7 +94,7 @@ app.post('/api/v1/footnotes', (request, response) => {
     if (!footnote[requiredParameter]) {
       return response
         .status(422)
-        .send({ error: `Expected format: { note: <String>, paper_id: <String> }. You're missing a "${requiredParameter}" property.` });
+        .send({ error: `Expected format: { note: <String>, paper_id: <Number> }. You're missing a "${requiredParameter}" prpoerty.` });
     }
   }
 
